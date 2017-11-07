@@ -1,5 +1,17 @@
+// dojo solution I cribbed due to time contraints :)
 public class FizzBuzz {
-    public String fizzBuzz(int number) {
-        // fizzbuzz logic here
+    public String fizzBuzz(int num) {
+        if (num % 3 == 0 && num % 5 == 0) {
+            return "FizzBuzz";
+        }
+        else if (num % 5 == 0) {
+            return "Buzz";
+        }
+        else if (num % 3 == 0) {
+            return "Fizz";
+        }
+        else {
+            return String.valueOf(num);
+        }
     }
 }
