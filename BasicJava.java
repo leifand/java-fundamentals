@@ -105,4 +105,30 @@ public class BasicJava {
       }
       return retArray;
     }
+
+    // final two methods taken from Dojo solutions in interest of time
+    public void squareValues(int[] givenArray){
+        int length = givenArray.length;
+
+        for (int i = 0; i < length; i++){
+            givenArray[i] *= givenArray[i];
+        }
+
+        System.out.println(givenArray);
+    }
+
+    public void eliminateNegatives(int[] array) {
+        ArrayList<Integer> myArray = new ArrayList<Integer>();
+        int length = array.length;
+
+        for(int i = 0; i < length; i++) {
+            if(array[i] < 0) {
+                myArray.add(0);
+            } else {
+                myArray.add(array[i]);
+            }
+        }
+
+        System.out.println(myArray);
+    }
   }
