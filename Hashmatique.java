@@ -23,8 +23,8 @@ public class Hashmatique {
   }
 
   public void printSongs() {
-    for (Object song : trackList) {
-      System.out.println(song.getKey() + " : " + song.getValue());
+    for(String key : trackList.keySet()) {
+               System.out.println(key + " : " + trackList.get(key));
     }
   }
 }
