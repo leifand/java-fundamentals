@@ -3,6 +3,7 @@ import java.util.HashMap;
 public class Hashmatique {
 
   private static HashMap<String, String> trackList = new HashMap<String, String>();
+
   public static void main(String[] args) {
 
     Hashmatique my_hash = new Hashmatique();
