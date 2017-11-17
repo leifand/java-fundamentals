@@ -10,7 +10,7 @@ public class ExceptionallyGeneric {
     myList.add("Goodbye World");
 
     try {
-      for
+      for (int item : myList)
     } catch (ClassCastException e) {
         System.out.println("ERROR ON INDEX {#}");
     }
